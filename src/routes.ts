@@ -17,6 +17,6 @@ router.get('/me', isAuthenticated, new DetailUserController().handle)
 
 // ------ ROTAS CATEGORY ------
 
-router.get('/category', isAuthenticated, new CreateCategoryController().handle)
+router.post('/category', isAuthenticated, new CreateCategoryController().handle)
 
 export { router };
