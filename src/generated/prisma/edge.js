@@ -172,7 +172,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\moisas\\Downloads\\Study\\Web Developer\\MammaMia Pizzaria\\MammaMia-Pizzaria\\src\\generated\\prisma",
+      "value": "C:\\Users\\MFerna08\\Downloads\\Study\\MammaMia\\MammaMia-Pizzaria\\src\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -186,7 +186,7 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "C:\\Users\\moisas\\Downloads\\Study\\Web Developer\\MammaMia Pizzaria\\MammaMia-Pizzaria\\prisma\\schema.prisma",
+    "sourceFilePath": "C:\\Users\\MFerna08\\Downloads\\Study\\MammaMia\\MammaMia-Pizzaria\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
