@@ -12,11 +12,12 @@ import { ListCategoryController } from "./controllers/category/ListCategoryContr
 import { CreateProductController } from "./controllers/product/CreateProductController";
 import { ListByCategoryController } from "./controllers/product/ListByCategoryController";
 
+import { CreateOrderController } from "./controllers/order/CreateOrderController";
+
 import uploadConfig from './config/multer'
 import multer from "multer";
 
 const router = Router();
-
 const upload = multer(uploadConfig.upload("./tmp"))
 
 // ------ ROTAS USER ------
@@ -32,7 +33,10 @@ router.get('/category', isAuthenticated, new ListCategoryController().handle)
 // ------ ROTAS PRODUCT ------
 
 router.post('/product', isAuthenticated, upload.single('file'), new CreateProductController().handle)
-
 router.get('/category/product', isAuthenticated, new ListByCategoryController().handle)
+
+// ------ ROTAS ORDER ------
+
+router.post('/order', isAuthenticated,  new CreateOrderController().handle)
 
 export { router };
